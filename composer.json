@@ -30,7 +30,7 @@
 		"nette/application": "^2.3|^2.4",
 		"nette/di": "^2.3|^2.4",
 		"latte/latte": "^2.3|^2.4",
-		"ublaboo/api-router": "~2.0.0"
+		"ublaboo/api-router": "dev-unipi"
 	},
 	"require-dev": {
 		"nette/tester": "~1.6.1",
