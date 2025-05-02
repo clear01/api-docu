@@ -5,7 +5,7 @@
 {var $hr_used = FALSE}
 {var $has_some_section = FALSE}
 
-<div class="apiDocu-container apiDocu-index">
+<div class="apiDocu-container-list apiDocu-index">
 	<div class="apiDocu-url-list">
 		{foreach $sections as $section_name => $section}
 			{if is_array($section)}
@@ -30,7 +30,7 @@
 {define route}
 	<a href="{ifset $section_name}{$section_name}.{/}{$file_name}.php" class="apiDocu-url">
 		{$route->getDescription()}<br/>
-		<small>{$route->getPath()|routeMaskStyles|noescape}</small>
+		<small>{$route->getPath()|routeMaskStyles|noescape}</small><br/>
 
 		<div class="apiDocu-url-method">{$route->getMethods()|implode:', '}</div>
 
