@@ -1,5 +1,5 @@
 {
-	"name": "contributte/api-docu",
+	"name": "clear01/api-docu",
 	"type": "library",
 	"description": "Documentation generating for ApiRouter routes - awesome runtime documentation",
 	"keywords": [
@@ -40,7 +40,7 @@
 		"nette/application": "^3.1.14",
 		"nette/di": "^3.1.8",
 		"latte/latte": "^2.6|^3.0",
-		"contributte/api-router": "dev-unipi-php-8"
+		"clear01/api-router": "dev-unipi-php-8"
 	},
 	"require-dev": {
 		"contributte/qa": "^0.4",
