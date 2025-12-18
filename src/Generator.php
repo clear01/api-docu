@@ -147,7 +147,7 @@ class Generator
 		$template = $this->templateFactory->createTemplate();
 		assert($template instanceof DefaultTemplate);
 
-		$template->addFilter(null, 'Contributte\ApiDocu\TemplateFilters::common');
+		$template->getLatte()->addFilter('description', [TemplateFilters::class, 'description']);
 
 		$template->setFile(__DIR__ . '/templates/' . $which);
 

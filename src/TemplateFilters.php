@@ -23,12 +23,9 @@ class TemplateFilters
 		return null;
 	}
 
-	/**
-	 * @param array<mixed> $text
-	 */
-	public static function description(array $text): string
+
+	public static function description(string $text): string
 	{
-		$text = reset($text);
 		$text = nl2br($text); // @phpstan-ignore-line
 		$text = str_replace(["\n", "\n\r", "\r\n", "\r"], '', $text);
 
