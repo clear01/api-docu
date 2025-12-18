@@ -1,5 +1,5 @@
 {
-	"name": "contributte/api-docu",
+	"name": "clear01/api-docu",
 	"type": "library",
 	"description": "Documentation generating for ApiRouter routes - awesome runtime documentation",
 	"keywords": [
