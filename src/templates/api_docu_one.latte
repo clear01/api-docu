@@ -40,11 +40,11 @@
 
 		<p class="apiDocu-description">{$route->getMethods()|implode:', '}</p>
 
-		<div class="apiDocu-parameters" n:if="$route->getPlacehodlerParameters()">
-			<h2>Mask parameters</h2>
+		<div class="apiDocu-parameters" n:if="$parameters">
+			<h2>Parameters</h2>
 
 			<table>
-				{foreach $route->getPlacehodlerParameters() as $parameter}
+				{foreach $parameters as $parameter => $parameretData}
 					<tr>
 						<th>
 							<span class="apiDocu-mask-param">&lt;{$parameter}&gt;</span>
@@ -79,7 +79,7 @@
 
 		{if $route->getExample()}
 			<h2>Example response</h2>
-			<pre class="apiDocu-parameters-box">{json_encode($route->getExample(), JSON_PRETTY_PRINT)}</pre>
+			<pre class="apiDocu-parameters-box">{if is_array($route->getExample())}{json_encode($route->getExample(), JSON_PRETTY_PRINT)}{else}{$route->getExample()}{/if}</pre>
 		{/if}
 	</div>
 {/block}
